@@ -1,7 +1,7 @@
 FROM nimmis/apache-php7:latest
 
 RUN apt-get update
-RUN apt-get install -y unzip libaio1 php-pear libcurl3-openssl-dev php7.0-dev php-ssh2
+RUN apt-get install -y unzip libaio1 php-pear libcurl3-openssl-dev php7.0-dev php-ssh2 php7.0-soap
 RUN apt-get clean -y
 
 RUN echo "log_errors = On" >> /etc/php/7.0/apache2/php.ini
